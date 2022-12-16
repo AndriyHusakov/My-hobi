@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Mil.jpg" type="image/x-icon">
+    <title>Моє хобі</title>
+</head>
+
+<body>
+    <center>
+        <h1>Моє хобі</h1>
+    </center>
+    <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Меню:)</button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+    
+    <div class="boxses">
+
+        <div class="box1">
+
+            <img class="Ronaldo" src="/Ronaldo.jpg" alt="">
+            <p1>Це мій найулюбленіший футболіс <a href="https://uk.wikipedia.org/wiki/%D0%9A%D1%80%D1%96%D1%88%D1%82%D1%96%D0%B0%D0%BD%D1%83_%D0%A0%D0%BE%D0%BD%D0%B0%D0%BB%D0%B4%D1%83">Криштиану Роналду</a>  напевно ви про нього колись чули зараз він грає за Манчестер Юнайтед. Ще він є найбільш оплачуваним футболістом світу.</p1>
+        
+        </div>
+
+        <div class="box2">
+         <img class="Clyb" src="Clyb.webp" alt="">
+         <p2>Це мій найулюбленіший клуб під назвою <a href="https://uk.wikipedia.org/wiki/%D0%9C%D0%B0%D0%BD%D1%87%D0%B5%D1%81%D1%82%D0%B5%D1%80_%D0%AE%D0%BD%D0%B0%D0%B9%D1%82%D0%B5%D0%B4">Манчестер Юнайтед</a> він є одиним із найуспішніших англійських клубів за кількістю трофеїв за всю історію, а за останні 20 років — найуспішніший клуб в Англії</p2>
+
+        </div>
+
+        <div class="box3">
+   <center><h1>Чому це моє хобі</h1></center>
+   <p1>По-перше я дуже гарно і швидко бігаю ще тому, що зарз багато хто грає в <a href="https://uk.wikipedia.org/wiki/%D0%A4%D1%83%D1%82%D0%B1%D0%BE%D0%BB">футбол</a>. Це мені подобається.</p1>
+
+
+        </div>
+    </div>
+
+    <script>
+
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+        
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+        </script>
+        
+
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+        h1 {
+            font-family: Rubik Vinyl;
+
+        }
+
+        body {
+            background: rgb(131, 58, 180);
+            background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 134, 29, 1) 50%, rgba(198, 252, 69, 1) 100%);
+        }
+
+        .boxses {
+            display: flex;
+            justify-content: space-between;
+            align-content: center;
+            margin-top: 200px;
+
+        }
+
+        
+        .box1 {
+            background: rgb(228, 106, 230);
+            width: 350px;
+            height: 400px;
+        }
+
+        .Ronaldo {
+            width: 350px;
+        }
+
+        p1{
+            font-size: 20px;
+            font-family: 'Kalam', cursive;
+        }
+        
+        
+        
+        .box2 {
+            width: 350px;
+            height: 400px;
+            background: rgb(238, 163, 41);
+        }
+
+        .Clyb{
+            width: 350px;
+            height: 200px;
+        }
+        p2{
+            font-size: 18px;
+            font-family: 'Kalam', cursive; 
+        }
+        .box3 {
+            width: 350px;
+            height: 400px;
+            background: rgb(187, 250, 38);
+        }
+        
+
+
+        .dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #3e8e41;
+}
+
+.dropdown {
+    float: right;
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    right: 0;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+    </style>
+</body>
+
+</html>
